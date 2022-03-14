@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ############### Utility Classes ########## */
+
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ############### Header########## */
+
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(248, 61, 37);
+    color: white ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.705);
+}
+
+.navbar{
+    padding: 10px 0 40px 0;
+}
+.header .navbar .logo{
+    float: left;
+}
+.header .navbar .nav-items{
+    float: right;
+}
+.header .navbar .nav-items li{
+    display: inline-block;
+    padding: 0 15px 5px 15px;
+    font-size: 20px
+}
+.navbar .nav-items li a{
+    font-weight: 00;
+
+    color: white;
+}
+.nav-items li a:hover{
+    border-bottom: 3px solid white;
+}
+
+/* ############# Text ################  */
+
+.intro{
+    display: flex;
+    align-items: center;
+}
+
+.intro .anim{
+    margin-top: 70px;
+}
+
+.intro .hd{
+    color: rgb(250, 46, 19);
+    font-size: 50px;
+}
+
+.intro ul{
+    position: absolute;
+    bottom: 5%;
+    margin-top: 30px;
+    color: rgb(248, 61, 37);
+    padding-left: 50px;
+    list-style-type: disc;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+/* ################### About ###########  */
+
+
+.about{
+    margin-top: 90px;
+}
+.cont{
+    margin-top: 40px;
+    display: flex;
+}
+
+.about h2{
+    text-align: center;
+    color: rgb(29, 29, 29);
+    margin: 0 auto;
+}
+
+
+.imgbox{
+    text-align: justify;
+    color: rgb(53, 53, 53);
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+    width: 70%;
+    word-spacing: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.imgbox span{
+    color: rgb(248, 61, 37);
+}
+.a,.b,.c{
+    margin-top: 10px;
+}
+
+.imgbox p{
+    text-indent: 40px;
+    margin-left: 80px;
+}
+
+
+.ilu{
+    margin-left: 100px;
+    width: 20%;
+    overflow: hidden;
+}
+.ilu img{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    margin-right: 80px;
+}
+
+.about h2:before,
+h2:after {
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+.cvbtn{
+    float: right;
+}
+
+.cvbtn a{
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 18px;
+    color: white;
+    background-color: rgb(248, 61, 37);
+}
+
+/* ################# Skills ###########  */
+
+
+.bhntainer{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.skills{
+    margin-top: 70px;
+}
+
+.skills h2:first-child{
+    text-align: center;
+}
+
+.skills h2:before,
+h2:after{
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+.chckt:before,
+.chckt:after{
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+.skilset{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.skilset label{
+    margin-right: 10px;
+   padding-bottom: 10px;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+
+.skilset h3{
+    margin-bottom: 20px;
+}
+.coding{
+    padding: 20px;
+    background-color: rgb(204, 204, 204);
+    width: 50%;
+    margin-right: 3px;
+    /* border: 2px solid red; */
+}
+
+.softwares{
+    margin-left: 3px;
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+/* #################### My Work ############  */
+
+.mywork{
+    margin-top: 90px;
+    
+}
+
+.mywork h2,.mywork h3{
+    text-align: center;
+}
+
+.mywork h2:before,
+h2:after {
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+.mwork{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.mwork div{
+    margin: 5px;
+    text-align: center;
+
+}
+
+.mwork a{
+    border-radius: 20px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 250px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* ############## Contact ##########  */
+
+
+
+.contact{
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(51, 51, 51);
+    padding: 20px;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+.contact h2:before,
+h2:after {
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+/* table{
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: left;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+table td{
+    padding-left: 20px;
+} */
+
+
+.cnt{
+   margin-top: 20px;
+ 
+}
+.cnt .t{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    
+}
+
+.copy{
+    background-color: rgb(19, 19, 19);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copy p{
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+
+
+/* ##################### Media Quaries #####################  */
+
+@media (max-width: 500px){
+
+/* ############### Header########## */
+    
+    .navbar{
+        padding: 10px 0 10px 0;
+    }
+
+    .header .navbar .logo{
+
+        padding-bottom: 10px;
+        float: none;
+    }
+
+    .navbar .logo h2{
+        text-align: center;
+    }
+    .header .navbar .nav-items{
+        float: none;
+    }
+    .header{
+        text-align: center;
+    }
+
+/* ############# Text ################  */
+
+    .intro{
+        display: block;
+    }
+
+    .intro .anim{
+        margin: 0 auto;
+    }
+
+    .intro .hd{
+    margin-top: 150px;
+    text-align: center;
+    color: rgb(250, 46, 19);
+    font-size: 25px;
+}
+    .intro img{
+        width: 100%;
+    }
+
+    .intro ul{
+        position:static;
+        color: rgb(248, 61, 37);
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    /* ################### About ###########  */
+
+    .about{
+        margin-top: 45px;
+    }
+
+    .cont{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .ilu{
+        margin-left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .imgbox{
+    
+        text-align: left;
+        color: rgb(53, 53, 53);
+        padding: 10px;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        word-spacing: 5px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+
+    .ilu{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .ilu img{
+        display: inline-block;
+        width: 50%;
+        margin-left: 90px;
+    }
+
+    .imgbox p{
+        
+        margin-top: 20px;
+        text-indent: 10px;
+        margin-left: 20px;
+    }
+
+    /* ################# Skills ###########  */
+
+    .bhntainer{
+        width: 90%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    .skills{
+        margin-top: 60px;
+    }
+
+    .skilset{
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .coding{
+        padding: 20px;
+        background-color: rgb(204, 204, 204);
+        width: 100%;
+        margin-right: 3px;
+        /* border: 2px solid red; */
+    }
+
+    .softwares{
+        margin-top: 10px;
+        background-color: rgb(204, 204, 204);
+        padding: 20px;
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    /* #################### My Work ############  */
+
+/* #################### My Work ############  */
+
+.mywork{
+    margin-top: 60px;
+}
+
+.mwork{
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.mwork div{
+    /* margin-bottom: 15px;
+    margin-left: 100px; */
+    text-align: center;
+    width: 100%;
+}
+
+.mwork a{
+    width: 100%;
+    border-radius: 20px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: space-around;
+    
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+    /* ############## Contact ##########  */
+
+    .contact{
+        color: white;
+        margin-top: 30px;
+        background-color: rgb(51, 51, 51);
+        padding: 10px;
+    }
+    
+    .cnt{
+        margin-top: 10px;
+      
+     }
+     .cnt .t{
+         text-align: center;
+         display: block;
+         font-size: 15px;
+         line-height: 35px;
+         letter-spacing: 2px;
+         
+     }
+
+}
+
+
+@media (min-width: 501px) and (max-width: 768px){
+
+/* ############### Header########## */
+
+
+.navbar{
+    padding: 10px 0 10px 0;
+}
+
+.header .navbar .logo{
+
+    padding-bottom: 10px;
+    float: none;
+}
+
+.navbar .logo h2{
+    text-align: center;
+}
+.header .navbar .nav-items{
+    float: none;
+}
+.header{
+    text-align: center;
+}
+
+
+/* ############# Text ################  */
+
+.intro{
+    display: block;
+}
+
+.intro .anim{
+    margin-top: 0px;
+}
+
+.intro .hd{
+margin-top: 150px;
+text-align: center;
+color: rgb(250, 46, 19);
+font-size: 35px;
+}
+
+
+.intro img{
+    width: 100%;
+}
+
+.intro ul{
+    position:static;
+    color: rgb(248, 61, 37);
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* ################### About ###########  */
+
+.about{
+    margin-top: 45px;
+}
+
+.cont{
+    margin-top: 20px;
+    display: block;
+}
+
+.ilu{
+    margin-left: 0px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgbox{
+
+    text-align: left;
+    color: rgb(53, 53, 53);
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    word-spacing: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.ilu{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.ilu img{
+    display: inline-block;
+    width: 50%;
+    margin-left: 150px;
+}
+
+.imgbox p{
+    
+    margin-top: 20px;
+    text-indent: 10px;
+    margin-left: 20px;
+}
+
+     /* #################### My Work ############  */
+
+     .mywork{
+        margin-top: 60px;
+    }
+
+    .mwork{
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .mwork div{
+        /* margin-bottom: 15px;
+        margin-left: 100px; */
+        text-align: center;
+        width: 100%;
+    }
+
+    .mwork a{
+        width: 100%;
+        border-radius: 20px;
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        justify-content: space-around;
+        
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+
+    /* ############## Contact ##########  */
+
+    .contact{
+        color: white;
+        margin-top: 30px;
+        background-color: rgb(51, 51, 51);
+        padding: 10px;
+    }
+    
+    .cnt{
+        margin-top: 10px;
+      
+     }
+     .cnt .t{
+         text-align: center;
+         display: block;
+         font-size: 20px;
+         line-height: 35px;
+         letter-spacing: 2px;
+         
+     }
+
+}
+

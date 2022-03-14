@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(51, 51, 51);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ############### Utility Classes ########## */
+
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ############### Header########## */
+
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(248, 61, 37);
+    color: white ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.705);
+}
+
+.navbar{
+    padding: 10px 0 40px 0;
+}
+.header .navbar .logo{
+    float: left;
+}
+.header .navbar .nav-items{
+    float: right;
+}
+.header .navbar .nav-items li{
+    display: inline-block;
+    padding: 0 15px 5px 15px;
+    font-size: 20px
+}
+.navbar .nav-items li a{
+    font-weight: 00;
+
+    color: white;
+}
+.nav-items li a:hover{
+    border-bottom: 3px solid white;
+}
+
+
+/* ################## Portfolio ############  */
+
+.port img{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.port video{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.vid{
+    text-align: center;
+    color: white;
+}
+
+.vid h2{
+    padding: 30px 0px 20px 0px;
+}
+
+/* #################### My Work ############  */
+
+.mywork{
+    margin-top: 90px;
+    color: white;
+}
+
+.mywork h2,.mywork h3{
+    text-align: center;
+}
+
+.mywork h2:before,
+h2:after {
+    content: '\00a0\00a0\00a0\00a0';
+    color: rgb(248, 61, 37);
+    text-decoration: line-through;
+    margin: auto 0.5em;
+}
+
+.mwork{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.mwork div{
+    margin: 5px;
+    text-align: center;
+
+}
+
+.mwork a{
+    border-radius: 20px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 250px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+/* ##################### Media Quaries #####################  */
+
+@media (max-width: 500px){
+
+    /* ############### Header########## */
+    
+    .navbar{
+        padding: 10px 0 10px 0;
+    }
+
+    .header .navbar .logo{
+
+        padding-bottom: 10px;
+        float: none;
+    }
+
+    .navbar .logo h2{
+        text-align: center;
+    }
+    .header .navbar .nav-items{
+        float: none;
+    }
+    .header{
+        text-align: center;
+    }
+
+    /* ################## Portfolio ############  */
+
+    
+    .port{
+         margin-top: 40px;
+     }
+
+    .port img{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .port video{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+ /* #################### My Work ############  */
+
+ .mywork{
+        margin-top: 60px;
+    }
+
+    .mwork{
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .mwork div{
+        /* margin-bottom: 15px;
+        margin-left: 100px; */
+        text-align: center;
+        width: 100%;
+    }
+
+    .mwork a{
+        width: 100%;
+        border-radius: 20px;
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        justify-content: space-around;
+        
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .vid h2{
+        font-size: 13px;
+        padding: 15px 0px 10px 0px;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+
+/* ############### Header########## */
+    
+.navbar{
+        padding: 10px 0 10px 0;
+    }
+
+    .header .navbar .logo{
+
+        padding-bottom: 10px;
+        float: none;
+    }
+
+    .navbar .logo h2{
+        text-align: center;
+    }
+    .header .navbar .nav-items{
+        float: none;
+    }
+    .header{
+        text-align: center;
+    }
+
+     /* ################## Portfolio ############  */
+
+     .port{
+         margin-top: 80px;
+     }
+     .port img{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .port video{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+         /* #################### My Work ############  */
+
+     .mywork{
+        margin-top: 60px;
+    }
+
+    .mwork{
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .mwork div{
+        /* margin-bottom: 15px;
+        margin-left: 100px; */
+        text-align: center;
+        width: 100%;
+    }
+
+    .mwork a{
+        width: 100%;
+        border-radius: 20px;
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        justify-content: space-around;
+        
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>SCREATION</h1>
+                </div>
+                
+            <ul class="nav-items">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="#abotu">About</a></li>
+                <li class="nav-item"><a href="#contu">Contact</a></li>
+                <li class="nav-item"><a href="#worku">Work</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="port">
+            <div class="p p1">
+                <img src="./uiux/1.png" alt="">
+            </div>
+            <div class="vid">
+                <h2>Watch video : why i made this App</h2>
+               <video src="./uiux/Pet app anim.mp4" controls></video>
+            </div>
+
+            <div class="p p2">
+                <img src="./uiux/2.png" alt="">
+            </div>
+            <div class="p p3">
+                <img src="./uiux/3.png" alt="">
+            </div>
+            <div class="p p4">
+                <img src="./uiux/4.png" alt="">
+            </div>
+            <div class="p p5">
+                <img src="./uiux/5.png" alt="">
+            </div>
+            <div class="p p6">
+                <img src="./uiux/6.png" alt="">
+            </div>
+            <div class="p p7">
+                <img src="./uiux/7.png" alt="">
+            </div>
+            <div class="p p8">
+                <img src="./uiux/8.png" alt="">
+            </div>
+            <div class="p p9">
+                <img src="./uiux/9.png" alt="">
+            </div>
+            <div class="p p10">
+                <img src="./uiux/10.png" alt="">
+            </div>
+            
+
+            <div id="worku" class="mywork">
+                <h2>MY WORK</h2>
+                <h3 class="chckt">Check Out my Work</h3>
+                <div class="mwork">
+                    <div class="uiux">
+                        <a href="./uiux.html">UI/UX</a>
+                    </div>
+            
+                    <div class="graphic">
+                        <a href="./graphic.html">GRAPHIC <br> DESIGN</a>         
+                    </div>
+            
+                    <div class="anim">
+                        <a href="./animation.html">ANIMATION</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contu" class="p p11">
+                <img src="./uiux/11.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+       
+    </div>
+
+ 
+
+</body>
+
+</html>
